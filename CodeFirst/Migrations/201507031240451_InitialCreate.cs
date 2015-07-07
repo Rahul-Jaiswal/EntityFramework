@@ -16,7 +16,7 @@ namespace EntityFramework.CodeFirst.Migrations
                         DateOfBirth = c.DateTime(),
                         Height = c.Decimal(precision: 18, scale: 2),
                         Weight = c.Single(),
-                        Standard_StandardId = c.Int(),
+                        Standard_StandardId = c.Int(),                        
                     })
                 .PrimaryKey(t => t.StudentID)
                 .ForeignKey("dbo.Standards", t => t.Standard_StandardId)

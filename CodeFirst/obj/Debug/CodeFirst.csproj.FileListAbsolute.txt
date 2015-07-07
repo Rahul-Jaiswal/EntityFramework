@@ -53,3 +53,6 @@ D:\Rahul RND\EntityFramework\CodeFirst\bin\System.Web.WebPages.Razor.xml
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.dll
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.pdb
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.csprojResolveAssemblyReference.cache
+D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\EntityFramework.CodeFirst.Migrations.InitialCreate.resources
+D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.Cache
+D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\EntityFramework.CodeFirst.Migrations.PhotoColumnAdded.resources

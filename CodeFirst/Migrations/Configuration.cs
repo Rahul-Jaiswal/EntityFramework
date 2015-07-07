@@ -1,5 +1,6 @@
 namespace EntityFramework.CodeFirst.Migrations
 {
+    using EntityFramework.CodeFirst.Models.Context;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -10,7 +11,7 @@ namespace EntityFramework.CodeFirst.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "SchoolDB";
+            ContextKey = "SchoolDB";            
         }
 
         protected override void Seed(SchoolDB context)

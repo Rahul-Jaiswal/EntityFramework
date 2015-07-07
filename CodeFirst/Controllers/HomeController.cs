@@ -1,4 +1,5 @@
 ﻿using EntityFramework.CodeFirst.Models;
+using EntityFramework.CodeFirst.Models.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace EntityFramework.CodeFirst.Controllers
                 StudentName="Rahul"                
             };
             using (var ctx = new SchoolDB())
-            {
+            {                
                 ctx.Students.Add(oStudent);
                 ctx.SaveChanges();
             }

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using EntityFramework.CodeFirst.Migrations;
+using EntityFramework.CodeFirst.Models.Context;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -15,7 +18,9 @@ namespace EntityFramework.CodeFirst
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);            
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SchoolDB, Configuration>());
+            
         }
     }
 }

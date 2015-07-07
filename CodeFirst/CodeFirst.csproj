@@ -179,6 +179,10 @@
     <Compile Include="Migrations\201507031240451_InitialCreate.Designer.cs">
       <DependentUpon>201507031240451_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507061138084_PhotoColumnAdded.cs" />
+    <Compile Include="Migrations\201507061138084_PhotoColumnAdded.Designer.cs">
+      <DependentUpon>201507061138084_PhotoColumnAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\SchoolDB.cs" />
     <Compile Include="Models\Standard.cs" />
@@ -244,6 +248,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507031240451_InitialCreate.resx">
       <DependentUpon>201507031240451_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507061138084_PhotoColumnAdded.resx">
+      <DependentUpon>201507061138084_PhotoColumnAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
