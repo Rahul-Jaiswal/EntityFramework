@@ -56,3 +56,4 @@ D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.csprojResolveAssembly
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\EntityFramework.CodeFirst.Migrations.InitialCreate.resources
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\CodeFirst.csproj.GenerateResource.Cache
 D:\Rahul RND\EntityFramework\CodeFirst\obj\Debug\EntityFramework.CodeFirst.Migrations.PhotoColumnAdded.resources
+D:\Rahul RND\EntityFramework\CodeFirst\bin\log4net.dll

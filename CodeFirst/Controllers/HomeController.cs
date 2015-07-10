@@ -1,4 +1,5 @@
-﻿using EntityFramework.CodeFirst.Models;
+﻿using EntityFramework.CodeFirst.Common.Filters;
+using EntityFramework.CodeFirst.Models;
 using EntityFramework.CodeFirst.Models.Context;
 using System;
 using System.Collections.Generic;
@@ -8,27 +9,45 @@ using System.Web.Mvc;
 
 namespace EntityFramework.CodeFirst.Controllers
 {
+    [EFHandleError]
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            Student oStudent = new Student()
+            try
             {
-                StudentName="Rahul"                
-            };
-            using (var ctx = new SchoolDB())
-            {                
-                ctx.Students.Add(oStudent);
-                ctx.SaveChanges();
+                Student oStudent = new Student()
+                {
+                    StudentName = "Rahul"
+                };
+                using (var ctx = new SchoolDB())
+                {
+                    ctx.Students.Add(oStudent);
+                    ctx.SaveChanges();
+                }
+                return View();
             }
-            return View();
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            try
+            {
+                throw new NullReferenceException();
+                ViewBag.Message = "Your application description page.";
 
-            return View();
+                return View();
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
 
         public ActionResult Contact()

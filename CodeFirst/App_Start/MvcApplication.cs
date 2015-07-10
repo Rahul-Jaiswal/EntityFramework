@@ -18,7 +18,8 @@ namespace EntityFramework.CodeFirst
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);            
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            log4net.Config.XmlConfigurator.Configure();   
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<SchoolDB, Configuration>());
             
         }
